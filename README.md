@@ -1,3 +1,2 @@
 # kirtasiye-web-sitesi
 
-selam

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en" dir="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/e66aaacd7f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <title>Kırtasiye X</title>
+  </head>
+  <body>
+        <!-- Giriş Ekranı -->
+        <div id="login-screen">
+            <div class="login-container">
+                <h2>Kullanıcı Girişi</h2>
+                <form id="login-form">
+                    <div class="inputBox">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="username" placeholder="Kullanıcı Adı" required>
+                    </div>
+                    <div class="inputBox">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" placeholder="Şifre" required>
+                    </div>
+                    <button type="submit" class="btn">Giriş Yap</button>
+                </form>
+            </div>
+        </div>
+    <div>
+        <section id="index">
+            <div id="logo">Kırtasiye X</div>
+            <nav>
+                <a class="nav-link active" href="#banner"><i class="fa-solid fa-house icon"></i> Anasayfa </a>
+                <a class="nav-link active" href="#menu"><i class="fa-solid fa-bars icon"></i>Ürünler</a>
+                <a class="nav-link active" href="#hakkimizda"><i class="fa-solid fa-address-card icon"></i>Hakkımızda</a>
+                <a class="nav-link active" href="#contact"><i class="fa-solid fa-circle-info icon"></i>İletişim</a>
+                <a class="nav-link active" href="#cart" onclick="showCart()"><i class="fa-solid fa-basket-shopping"></i>Sipariş</a>
+            </nav>
+        </section>
+
+        <section id="banner">
+            <div id="black"></div>
+            <div class="icerik">
+                <h2>Hızlı Teslimat Hizmeti!</h2>
+                <hr width=300 align=left>
+                <p>Sıradan kırtasiye alışverişlerinizde zamanınızı harcamak yerine, ihtiyacınız olan her şeyi hızlı ve güvenilir bir şekilde kapınıza getiriyoruz. Express Home Delivery ile kırtasiye ürünlerine olan ihtiyaçlarınızı hızlı bir şekilde karşılayabilirsiniz.</p>
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2>ÜRÜNLERİMİZ</h2>
+            <div class="box-container" id="menu2">
+            <!-- Ürünler API'den dinamik olarak yüklenecek -->
+            </div>
+        </section>
+
+        <section>
+            <div id="cart" style="display:none;">
+            <h2>Sepet</h2>
+            <ul id="cart-items">
+                <!-- Sepet ürünleri burada listelenecek -->
+            </ul>
+            <p>Toplam Fiyat: <span id="total-price">0</span> TL</p>
+            <button onclick="checkout()">Öde</button>
+        </div>
+        </section>
+
+        <section id="hakkimizda">
+            <h3>Hakkımızda</h3>
+            <div id="container">
+                <div id="sol">
+                    <div id="sol-content">
+                        <h5 id="h5sol">
+                            Lorem ipsum dolor sit,oluta earum quia officia doloremque alias minima voluptas quidem ratione commodi voluptatibus, perspiciatis molestias quisquam repellat illum obcaecati. Expedita, neque sit.
+                        </h5>
+                    </div>
+                </div>
+                <div id="sag">
+                    <div id="sag-content">
+                        <p id="psag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quos fuga beatae ut possimus consequatur quia dolorum voluptatem praesentium ea, nemo sequi sit magnam officiis unde veniam? Earum, commodi officia.</p>
+                    </div>
+                </div>
+            </div>
+        <section id="contact">
+            <h3>İletişim</h3>
+            <div class="row">
+                <div class="form-container">
+                    <form>
+                        <h2>Bize Ulaş !</h2>
+                        <div class="inputBox">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Adınız">
+                        </div>
+                        <div class="inputBox">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" placeholder="E-posta">
+                        </div>
+                        <div class="inputBox">
+                            <i class="fas fa-phone"></i>
+                            <input type="tel" placeholder="Telefon">
+                        </div>
+                        <input type="submit" class="btn" value="İletişime Geç">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section>
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <h4>Kırtasiye X</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis justo eget dolor cursus varius.</p>
+                <ul class="social-icons">
+                    <li><a href="#">                <i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h4>İletişim Bilgileri</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Kırtasiye Sokak, Şehir, Ülke</p>
+                <p><i class="fas fa-phone"></i> +1234567890</p>
+                <p><i class="fas fa-envelope"></i> info@kirtasiyex.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Kırtasiye X. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+    </section>
+    </div>
+
+    <script src="script.js"></script>
+
+    </body>
+    </html>
+ 
+
